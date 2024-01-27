@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+
+    <style>
+        #wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        header {
+            background-color: rgb(203, 25, 25);
+            font-size: 20px;
+            text-align: center;
+            color: rgb(77, 76, 76);
+            width: 100%;
+        }
+
+        main {
+            background-color: rgb(242, 194, 4);
+            font-size: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 20px;
+            background-color: rgb(2, 95, 35);
+            color: rgb(190, 163, 9);
+           
+        }
+
+        nav a {
+            color: rgb(190, 163, 9);
+            text-decoration: none;
+
+        }
+
+        footer {
+            background-color: rgb(203, 25, 25);
+            font-size: 20px;
+            text-align: center;
+            color: rgb(77, 76, 76);
+            width: 100%;
+        }
+
+        img {
+            width: 99%;
+            height: auto;
+            border: 1.5px solid black;
+        }
+
+        article {
+            border: 1px solid black;
+            border-width: auto;
+            border-bottom: 10%;
+        }
+
+        p {
+            overflow: scroll;
+            max-height: 100px;
+            padding: 5px;
+            margin: 3px;
+        }
+
+
+        @media only screen and (min-width: 700px) {
+            nav li {
+                border: 2px solid rgb(190, 163, 9);
+                display: inline-block;
+                align-content: left;
+                text-align: left;
+                margin-right: 7px;
+                padding:2px;
+          
+            }
+            
+            body,
+            p,
+            li {
+                font-size: 4vw;
+
+            }
+
+            h1,
+            header,
+            footer {
+                font-size: 6vw;
+            }
+
+            p {
+
+                max-height: 270px;
+
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            p {
+
+                max-height: 520px;
+
+            }
+
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+              
+            }
+
+            nav {
+                width: 25%;
+            }
+
+            #content {
+                width: 75%;
+            }
+
+            nav li {
+                border: none;
+                margin-top: 10%;
+
+            }
+
+            li {
+                font-size: 5vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Responsive - "Mobile First"</h1>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#General">General</a></li>
+                    <li><a href="#Students">Students</a></li>
+                    <li><a href="#Abitur">Abitur</a></li>
+                </ul>
+            </nav><br><br>
+            <section id="content">
+                <article id="General">
+
+                    <img src="../img/General picture.jpg" alt="General picture">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex, nam odio at quam ipsam
+                        quis
+                        dolor minima totam debitis possimus atque quod eum repellendus distinctio nemo deleniti
+                        veritatis.
+                        Possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex, nam odio at
+                        quam
+                        ipsam quis
+                        dolor minima totam debitis possimus atque quod eum repellendus distinctio nemo deleniti
+                        veritatis.
+                        Possimus.</p>
+                </article><br><br><br><br><br><br><br><br><br><br>
+
+                <article id="Students">
+                    <img src="../img/Students.jpg" alt="Students picture">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex, nam odio at quam ipsam
+                        quis
+                        dolor minima totam debitis possimus atque quod eum repellendus distinctio nemo deleniti
+                        veritatis.
+                        Possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex, nam odio at
+                        quam
+                        ipsam quis
+                        dolor minima totam debitis possimus atque quod eum repellendus distinctio nemo deleniti
+                        veritatis.
+                        Possimus.</p>
+                </article><br><br><br><br><br><br><br><br><br><br>
+
+                <article id="Abitur">
+                    <img src="../img/Abitur.jpg" alt="Abitur picture">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex, nam odio at quam ipsam
+                        quis
+                        dolor minima totam debitis possimus atque quod eum repellendus distinctio nemo deleniti
+                        veritatis.
+                        Possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex, nam odio at
+                        quam
+                        ipsam quis
+                        dolor minima totam debitis possimus atque quod eum repellendus distinctio nemo deleniti
+                        veritatis.
+                        Possimus.</p>
+                </article><br><br>
+            </section>
+        </main>
+        <footer>
+            <h1>Autor: Metlytskyi Andrii</h1>
+        </footer>
+    </div>
+</body>
+
+</html>
